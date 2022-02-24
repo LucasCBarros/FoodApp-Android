@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_red_dark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECEITA DE COOKIE"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/cookie01" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="32dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grau Gordice/Saudavel" />
+
+            <SeekBar
+                android:id="@+id/seek1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:progress="5"
+                android:secondaryProgress="5" />
+
+            <TextView
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grau Caro/Barato" />
+
+            <SeekBar
+                android:id="@+id/seek2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:progress="5"
+                android:secondaryProgress="5" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grau Chique/Simples" />
+
+            <SeekBar
+                android:id="@+id/seek3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:progress="5"
+                android:secondaryProgress="5" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_red_light">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MODO DE PREPARO"/>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Misture a manteiga, açúcar mascavo, açúcar, essência de baunilha (e chocolate em pó, se for fazer cookies com base de chocolate)
+\n
+Adicione o ovo batido aos poucos e misture bem
+\n
+Acrescente a farinha aos poucos e misture bem (pode ser na mão ou na batedeira planetária)
+\n
+Por último, adicione o fermento e misture só para incorporá-lo à massa
+\n
+Depois da massa bem misturada, adicione o chocolate picado
+\n
+Forme bolinhas pequenas e asse em forno preaquecido, sobre papel manteiga, por aproximadamente 15 a 20 minutos (250° C)" />
+
+            </LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGREDIENTES"/>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- 125 g de manteiga sem sal em temperatura ambiente
+                \n
+- 3/4 xícara de açúcar
+\n
+- 1/2 xícara de açúcar mascavo
+\n
+- 1 ovo
+\n
+- 1 e 3/4 xícara de farinha de trigo
+\n
+- 1 colher (chá) de fermento em pó
+\n
+- 300 g de chocolate meio amargo picado
+\n
+- 1 colher (chá) de essência de baunilha
+\n
+- para fazer cookie de chocolate acrescentar 1/4 xícara de chocolate em pó" />
+        </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Back"
+            android:id="@+id/btn_receita_back"
+            android:background="#50000000"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:background="#50000000"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:background="#50000000"
+            />
+
+    </LinearLayout>
+</LinearLayout>
